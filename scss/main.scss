@@ -42,9 +42,8 @@ img{
 #logo{
     width: 70px;
     height: 70px; 
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
-
 }
 
 /* Main Nav */
@@ -93,10 +92,15 @@ img{
       .header-content {
         text-align: center;
         padding-top: 20%;
+
+        p {
+            padding-top: 10px;
+           font-weight: bolder;
+        }
   
         h1 {
           font-size: 4rem;
-          line-height: 1.2;
+          line-height: 1;
          }
        }
     }
@@ -125,7 +129,7 @@ img{
             grid-template-columns: repeat(4, 1fr);
 
             .fas {
-                color: $main-color;
+                color: #145A32;
                 padding-bottom: 0.4rem;
             }
         }
@@ -156,10 +160,12 @@ img{
 
                 &:nth-child(odd) {
                     background: $stat-color;
+                    color: #FBFCFC;
                 }
 
                 &:nth-child(even) {
                     background: $medium-color;
+                    color: #000;
                 }
             }
         }
@@ -179,7 +185,7 @@ img{
                 top: 0;
                 right: 0;
                 font-size: 28px;
-                background: $main-color;
+                background: $homeC-color;
                 border-radius: 50%;
                 height: 15px;
                 width: 15px;
@@ -231,6 +237,8 @@ img{
         /* Grid Area */
         .bio-image {
             grid-area: bioimage;
+            width: 100%;
+            height: 350px;
         }
 
         .bio {
@@ -253,7 +261,7 @@ img{
         .award-1 .fas,
         .award-2 .fas,
         .award-3 .fas {
-            color: $main-color;
+            color: #F39C12;
             margin: 1rem;
         }
     }

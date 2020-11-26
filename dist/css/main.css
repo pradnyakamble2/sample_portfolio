@@ -103,7 +103,7 @@ input[class^='btn-']:hover {
 
 .item {
   position: relative;
-  background: #ffbc00;
+  background: #F1948A;
   overflow: hidden;
   /* Bring in main color overlay */
   /* Scale image on hover */
@@ -201,7 +201,7 @@ img {
 #logo {
   width: 70px;
   height: 70px;
-  color: #fff;
+  color: #000;
   text-transform: uppercase; }
 
 /* Main Nav */
@@ -230,18 +230,21 @@ img {
   /*  Header Home */
   /* Header Inner */ }
   #header-home {
-    background: url("../img/showcase.jpg") no-repeat center right/cover;
+    background: url("../img/showcasebg4.jpg") no-repeat center right/cover;
     height: 100vh;
     color: #fff;
     /*  Header Content */ }
     #header-home .header-content {
       text-align: center;
       padding-top: 20%; }
+      #header-home .header-content p {
+        padding-top: 10px;
+        font-weight: bolder; }
       #header-home .header-content h1 {
         font-size: 4rem;
-        line-height: 1.2; }
+        line-height: 1; }
   #header-inner {
-    background: url("../img/showcase.jpg") no-repeat 20% 10%/cover;
+    background: url("../img/showcasebg4.jpg") no-repeat 20% 10%/cover;
     height: 5.5rem;
     border-bottom: 3px solid #ffbc00; }
 
@@ -256,7 +259,7 @@ img {
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr); }
     #home-a .specials .fas {
-      color: #ffbc00;
+      color: #145A32;
       padding-bottom: 0.4rem; }
   #home-b .stats {
     display: grid;
@@ -271,9 +274,11 @@ img {
     #home-b .stats div {
       padding: 3rem 0; }
       #home-b .stats div:nth-child(odd) {
-        background: #696D6C; }
+        background: #696D6C;
+        color: #FBFCFC; }
       #home-b .stats div:nth-child(even) {
-        background: #ccc; }
+        background: #ccc;
+        color: #000; }
   #home-c .process {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -285,7 +290,7 @@ img {
       top: 0;
       right: 0;
       font-size: 28px;
-      background: #ffbc00;
+      background: #FF6000;
       border-radius: 50%;
       height: 15px;
       width: 15px;
@@ -322,7 +327,9 @@ img {
       grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
       grid-gap: 1.2rem; }
     #about-a .bio-image {
-      grid-area: bioimage; }
+      grid-area: bioimage;
+      width: 100%;
+      height: 350px; }
     #about-a .bio {
       grid-area: bio;
       border-left: 3px solid #ffbc00;
@@ -336,7 +343,7 @@ img {
     #about-a .award-1 .fas,
     #about-a .award-2 .fas,
     #about-a .award-3 .fas {
-      color: #ffbc00;
+      color: #F39C12;
       margin: 1rem; }
   #about-b .progress {
     overflow: hidden;
